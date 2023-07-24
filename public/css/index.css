@@ -20,6 +20,7 @@ body{
     width: 40%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
 }
 
 .header{
@@ -162,7 +163,6 @@ body{
     display: grid;
     grid: auto-flow / 1fr 1fr;
     overflow: hidden;
-    margin-top: 4rem;
     grid-gap: 1.5rem;
 }
 
@@ -224,6 +224,106 @@ body{
 }
 
 .hidden-layer{
+    display: none;
+}
+
+/* Contact form Design */
+.contact-field{
+    width: 40%;
+}
+
+.contact-field input{
+    background-color: #171F26;
+}
+
+.contact-field textarea{
+    background-color: #171F26;
+}
+
+/* Skills Part design */
+.skills{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skill-points{
+    background-color: #171F26;
+    margin: 0.3rem;
+    padding: 1rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills .yellow{
+    background-color: #FFE070;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.skills .nodejs{
+    height: 7rem;
+    width: 7rem;
+}
+
+.skills .html-1{
+    height: 10rem;
+    width: 10rem;
+}
+
+.skills .firebase{
+    height: 7rem;
+    width: 7rem;
+}
+
+.skills .mongodb{
+    height: 11rem;
+    width: 11rem;
+}
+
+.skills .bootstrap{
+    height: 7rem;
+    width: 7rem;
+}
+
+.skills .express{
+    height: 10rem;
+    width: 10rem;
+}
+
+.skills .react{
+    height: 10rem;
+    width: 10rem;
+}
+
+.skills .css{
+    height: 6rem;
+    width: 6rem;
+}
+
+.skills .javascript{
+    height: 8rem;
+    width: 8rem;
+}
+
+/* Temporaryyyyy */
+/* .projects{
+    display: none;
+}
+.contact-field{
+    display: none;
+} */
+
+
+/* For Hiding */
+.hideme{
     display: none;
 }
 
