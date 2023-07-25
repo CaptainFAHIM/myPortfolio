@@ -234,13 +234,11 @@ body{
     width: 100%;
 }
 
-.contact-field input{
+.contact-field input, .contact-field textarea{
     background-color: #171F26;
+    color: #bfd2e3;
 }
 
-.contact-field textarea{
-    background-color: #171F26;
-}
 
 /* Skills Part design */
 .skills{

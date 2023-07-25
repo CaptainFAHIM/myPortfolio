@@ -131,21 +131,21 @@
         <!-- Contact me -->
         <div class="contact-field hideme">
             <h2>Contact Me:</h2>
-            <form action="#">
+            <form action="/submit" method="POST">
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
                 </div>
 
                 <div class="mb-3">
                     <label for="message" class="form-label">Message:</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
                   </div>
                   <button type="submit" class="btn dwn-btn send-btn">Send</button>
             </form>
