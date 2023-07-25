@@ -332,8 +332,10 @@ body{
 /* Media Queries */
 
 @media (max-width: 830px) {
+
+
     .hero {
-        width: 80%;
+        width: 90%;
     }
 
     .navbar {
@@ -342,7 +344,7 @@ body{
     }
 
     .social {
-        width: 80%;
+        width: 90%;
     }
 
     .experience {
@@ -375,12 +377,12 @@ body{
 
     .projects {
         grid-template-columns: 1fr;
-        width: 80%;
+        width: 90%;
     }
 
     .contact-field,
     .footer, .skills {
-        width: 80%;
+        width: 90%;
     }
 
 }
