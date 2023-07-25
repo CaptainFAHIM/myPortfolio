@@ -1,0 +1,27 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #0C151D;
+    color: #bfd2e3;
+}
+
+.main{
+    max-width: 768px;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.main .back-btn a{
+    color: #FFE070;
+    margin-top: 0.4rem;
+}
+
+.back-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171F26;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+}

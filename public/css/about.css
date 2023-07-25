@@ -1,0 +1,73 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #0C151D;
+    color: #bfd2e3;
+}
+
+.main{
+    max-width: 768px;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.main .back-btn a{
+    color: #FFE070;
+    margin-top: 0.4rem;
+}
+
+.back-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171F26;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+}
+
+.myself h2{
+    color: #FFE070;
+    font-weight: bold;
+}
+
+.myself h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.myself p{
+    margin-bottom: 2rem;
+}
+
+.education h2{
+    font-size: 1.5rem;
+    color: #FFE070;
+    font-weight: bold;
+}
+
+.education{
+    margin-bottom: 2rem;
+}
+
+.hobbies h2{
+    font-weight: bold;
+    color: #FFE070;
+}
+
+.hobbies{
+    margin-bottom: 20rem;
+}
+
+.footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 830px){
+    .main{
+        width: 80%;
+    }
+}
