@@ -2,7 +2,7 @@
 const express = require("express");
 require("dotenv").config();
 const connectDb = require("./config/database");
-const User = require("./models/messageModel"); 
+const Message = require("./models/messageModel"); 
 
 
 const app = express();
@@ -16,6 +16,7 @@ app.use((req, res, next) => {
   });
 
   app.use(express.urlencoded({extended: true}));
+  app.use(express.json());
 
   // Database Connection
   connectDb();
@@ -40,8 +41,8 @@ app.get("/development", (req, res) => {
 app.post('/submit', async (req, res) => {
     try {
       const { name, email, message} = req.body;
-      const user = new User({ name, email, message});
-      await user.save();
+      const msg = new Message({ name, email, message});
+      await msg.save();
       res.send("Successfully sent the message, I will get in touch with you soon!");
     } catch (error) {
       res.status(500).send("An error occured while sending the message!");
