@@ -2,7 +2,8 @@
 const express = require("express");
 require("dotenv").config();
 const connectDb = require("./config/database");
-const Message = require("./models/messageModel"); 
+const Message = require("./models/messageModel");
+const bodyParser = require('body-parser');
 
 
 const app = express();
@@ -15,8 +16,10 @@ app.use((req, res, next) => {
     next();
   });
 
-  app.use(express.urlencoded({extended: true}));
-  app.use(express.json());
+  // app.use(express.urlencoded({extended: true}));
+  // app.use(express.json());
+  app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
   // Database Connection
   connectDb();
