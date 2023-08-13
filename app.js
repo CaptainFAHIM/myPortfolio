@@ -84,7 +84,7 @@ app.get("/adminpanel", authGuard, async (req, res) => {
     // Show Messages
   let messages = await Message.find();
   let admins = await Admin.find();
-  res.render("adminpanel", {messages, admins});
+  res.render("adminPanel", {messages, admins});
   } catch (error) {
     console.log(error.message);
   }
