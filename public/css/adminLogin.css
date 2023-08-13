@@ -1,0 +1,52 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #0C151D;
+    color: #bfd2e3;
+    /* background-color: #171F26; */
+}
+
+.main{
+    background-color: #171F26;
+    /* background-color: #0C151D; */
+    max-width: 450px;
+    margin: auto;
+    margin-top: 15rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main form{
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.main .btn-primary{
+    width: 100%;
+    background-color: #FFE070;
+    color: black;
+}
+
+.main .btn-primary:hover{
+    background-color: #ffe070b0;
+}
+
+.login-ico{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.error{
+    color: red;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.hide-error{
+    font-size: 0;
+}

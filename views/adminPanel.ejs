@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/adminPanel.css">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <div class="header">
+    <div class="admin-name"><%= email %></div>
+    <button class="logout-btn">Log Out</button>
+  </div>
+  
+  <div class="admin-panel">
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li class="messages"><a>Messages</a></li>
+        <li class="admins"><a>Admins</a></li>
+      </ul>
+    </div>
+    <div class="content message-content">
+      <div class="section message-section">
+        <div class="section-header">Messages</div>
+        <% for( let i = 0; i < messages.length; i++ ) { %>
+        <div class="message"><%= `Name: ${messages[i].name}` %><br><%= `Email: ${messages[i].email}` %><br><%= `Message: ${messages[i].message}` %></div>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="content admin-content hide">
+        <div class="section admin-section">
+          <div class="section-header">Admins</div>
+          <% for( let i = 0; i < admins.length; i++ ) { %>
+            <div class="message"><%= `Email: ${admins[i].email}` %><br><%= `Password: ${admins[i].password}` %></div>
+            <% } %>
+        </div>
+        <form action="/adminpanel" method="post">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Add Admin</button>
+        </form>
+      </div>
+
+  </div>
+  <script type="module" src="/js/adminPanel.js"></script>
+</body>
+</html>
