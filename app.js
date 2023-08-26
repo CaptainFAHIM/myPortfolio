@@ -50,6 +50,12 @@ app.get("/development", (req, res) => {
     res.sendFile(__dirname+"/public/projects/comingSoon.html");
 });
 
+app.get("/projects/:name", (req, res) => {
+  if(req.params.name === "project0"){
+    res.sendFile(__dirname+"/public/projects/project0.html");
+  }
+});
+
 // Admin panel
 app.get("/admin", (req, res) => {
   res.render("adminLogin");
@@ -127,6 +133,10 @@ app.post('/submit', async (req, res) => {
     res.clearCookie("jwtlogin");
     res.status(200).json({ message: 'Logged out successfully' });
   });
+
+
+  // Delete Message
+  
 
 
 // Server

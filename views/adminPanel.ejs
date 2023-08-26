@@ -24,7 +24,9 @@
       <div class="section message-section">
         <div class="section-header">Messages</div>
         <% for( let i = 0; i < messages.length; i++ ) { %>
-        <div class="message"><%= `Name: ${messages[i].name}` %><br><%= `Email: ${messages[i].email}` %><br><%= `Message: ${messages[i].message}` %></div>
+        <div class="message"><%= `Name: ${messages[i].name}` %><br><%= `Email: ${messages[i].email}` %><br><%= `Message: ${messages[i].message}` %>
+          <button class="delete-button" data-index="<%= i %>">Delete</button>
+        </div>
         <% } %>
       </div>
     </div>
